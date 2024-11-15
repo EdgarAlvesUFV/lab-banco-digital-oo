@@ -7,7 +7,11 @@ public class ContaPoupanca extends Conta {
 
 	@Override
 	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Poupan�a ===");
+		System.out.println("=== Extrato Conta Poupan�a ===");
 		super.imprimirInfosComuns();
+		System.out.println("Histórico de Transações:");
+		for (String transacao : historicoTransacoes) {
+			System.out.println(transacao);
+		}
 	}
 }
